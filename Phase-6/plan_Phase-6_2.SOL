@@ -1,0 +1,30 @@
+
+; Version LPG-td-1.4
+; Seed 4224892
+; Command line: ./lpg-td -o Phase-6/domain_temporal.pddl -f Phase-6/problem_temporal.pddl -n 3 
+; Problem Phase-6
+; Time 0.01
+; Search time 0.01
+; Parsing time 0.00
+; Mutex time 0.00
+; MakeSpan 38.50
+
+
+0.0002:   (DRIVE T2 S6 S5 SL2) [1.5000]
+1.5005:   (DRIVE T2 S5 S4 SL1) [1.5000]
+3.0007:   (STOP T2 S4) [2.0000]
+5.0012:   (DRIVE T2 S4 S3 RL1) [1.7500]
+6.7515:   (DRIVE T2 S3 S2 RL2) [0.6250]
+7.3767:   (DRIVE T2 S2 S1 RL3) [2.0000]
+9.3770:   (DRIVE T2 S1 S0 RL4) [1.2500]
+10.6272:   (STOP T2 S0) [2.0000]
+0.0002:   (DRIVE T1 S0 S1 FL1) [5.0000]
+5.0005:   (DRIVE T1 S1 S2 FL2) [8.0000]
+13.0007:   (DRIVE T1 S2 S3 FL3) [2.5000]
+15.5010:   (DRIVE T1 S3 S4 FL4) [7.0000]
+22.5012:   (DRIVE T1 S4 S5 SL1) [6.0000]
+28.5015:   (STOP T1 S5) [2.0000]
+30.5020:   (DRIVE T1 S5 S6 SL2) [6.0000]
+36.5023:   (STOP T1 S6) [2.0000]
+
+
