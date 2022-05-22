@@ -1,0 +1,19 @@
+
+; Version LPG-td-1.4
+; Seed 33817419
+; Command line: ./lpg-td -o domain_temporal.pddl -f problem_temporal.pddl -speed 
+; Problem problem_temporal.pddl
+; Time 0.01
+; Search time 0.01
+; Parsing time 0.00
+; Mutex time 0.00
+; MetricValue 6.00
+
+0.0002:   (DRIVE T1 S0 S1) [20.0000]
+20.0005:   (DRIVE T1 S1 S2) [30.0000]
+50.0008:   (DRIVE T1 S2 S3) [25.0000]
+0.0002:   (DRIVE T2 S3 S2) [25.0000]
+25.0005:   (DRIVE T2 S2 S1) [30.0000]
+55.0008:   (DRIVE T2 S1 S0) [20.0000]
+
+
