@@ -20,8 +20,8 @@ Command Mode:
 
 /lpg-td -o domain_temporal.pddl -f problem_temporal.pddl -n 2                                                          
 
- Command line: ./lpg-td -o domain_temporal.pddl -f problem_temporal.pddl -speed ( -quality -timesteps)
- 
+ Command line: ./lpg-td -o domain_temporal.pddl -f problem_temporal.pddl -speed 
+ ./lpg-td -o domain_temporal.pddl -f problem_temporal.pddl -quality -timesteps
  
 
 LPG is a fully automated system for solving planning problems specified
