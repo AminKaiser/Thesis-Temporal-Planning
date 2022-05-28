@@ -9,6 +9,10 @@ problem=open("problem-temporal.pddl",'w')
 goal="(:goal\n(and"
 for line in demo:
     problem.write(line);
+mant=sample(range(0,len(line_list)),5)
+for lin in mant:
+    print(line_list[lin])
+    problem.write(f"(maintenance-line {line_list[lin]})\n")
 trainNo=sample(range(0,len(train_list)),n)
 for i in trainNo:
     train=train_list[i]
