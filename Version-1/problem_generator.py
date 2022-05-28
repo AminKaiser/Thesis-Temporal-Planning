@@ -1,7 +1,30 @@
 #This scripts generates problem file
-train_list = [
-    ["t1",["s0","s1","s2","s3"]],
-    ["t2",["s3","s2","s1","s0"]],
-    ["t3",["s1","s2","s3"]],
-    ["t4",["s3","s2","s1"]]
-    ]
+from random import random, randrange, sample
+import sys
+from object_lists import *
+
+n=int(sys.argv[1])
+demo=open('demo','r')
+problem=open("problem-temporal.pddl",'w')
+goal="(:goal\n(and"
+for line in demo:
+    problem.write(line);
+trainNo=sample(range(0,len(train_list)),n)
+for i in trainNo:
+    train=train_list[i]
+    name=train[0]
+    speed=randrange(10,20,5)
+    problem.write(f"\n(=(train-speed {name}){speed})\n")
+    problem.write(f"(train-at {name} {train[1][0]})\n")
+    problem.write(f"(visited {name} {train[1][0]})\n")
+    for stn in train[1][1:]:
+        problem.write(f"(stoppage-at {name} {stn})\n")
+        goal+=f"(visited {name} {stn})\n"
+    
+problem.write(")\n")
+goal+="))\n"
+problem.write(goal)
+problem.write("(:metric minimize (total-cost))\n)\n")
+
+demo.close()
+problem.close()
