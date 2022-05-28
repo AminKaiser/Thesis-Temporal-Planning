@@ -4,14 +4,15 @@ import sys
 from object_lists import *
 
 n=int(sys.argv[1])
+nm=int(sys.argv[2])
 demo=open('demo','r')
 problem=open("problem-temporal.pddl",'w')
 goal="(:goal\n(and"
 for line in demo:
     problem.write(line);
-mant=sample(range(0,len(line_list)),5)
+mant=sample(range(0,len(line_list)),nm)
 for lin in mant:
-    print(line_list[lin])
+    #print(line_list[lin])
     problem.write(f"(maintenance-line {line_list[lin]})\n")
 trainNo=sample(range(0,len(train_list)),n)
 for i in trainNo:
