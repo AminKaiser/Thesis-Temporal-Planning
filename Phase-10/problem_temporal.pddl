@@ -193,6 +193,7 @@
         (visited t2 Dhaka)
         )
     )
-    (:metric minimize (total-time))
+    ;(:metric minimize (total-time))
+    (:metric minimize (total-cost))
 
 )
