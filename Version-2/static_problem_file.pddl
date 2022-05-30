@@ -64,7 +64,7 @@
         (valid-move Kaunia Tista sl27)
         (valid-move Tista Lalmonir-Hat sl28)
         (valid-move Lalmonir-Hat Tush-Bhandar sl29)
-        (valid-move Tush-Bhandar Patgramsl30)
+        (valid-move Tush-Bhandar Patgram sl30)
         (valid-move Patgram Burimari sl31)
         (valid-move Tista Kurigram sl32)
         (valid-move Akhaura Shaestaganj sl33)
@@ -219,7 +219,7 @@
 
         (= (station-distance Jessore Khulna)45)
         (= (station-distance Ishwardi Abdulpur)20)
-        (= (station-distance Abdul Rajshahi)70)
+        (= (station-distance Abdulpur Rajshahi)70)
         (= (station-distance Rajshahi Amnura)50)
         (= (station-distance Amnura Chanpainawabganj)65)
         (= (station-distance Abdulpur Santahar)55)
