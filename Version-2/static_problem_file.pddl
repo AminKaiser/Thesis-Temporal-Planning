@@ -6,7 +6,7 @@
         ;Station Name
         Dhaka Dhaka-Biman-Bandar Tongi Narsingdi Bhairab Brahmanbaria Akhaura Cumilla Laksham Feni Chittagong - station
         Maijdi-Court Noakhali Shaestaganj Kulaura Sylhet Joydebpur Mymensingh Tangail Bangabandhu-Setu Ishwardi Khulna Abdulpur  Rajshahi - station
-        Bheramara Chuadanga Darshana Jessore Khulna Amnura Chanpainawabganj Santahar Jaypurhat Parbatipur Bogra Bonapara Gaibanda Dinajpu - station
+        Bheramara Chuadanga Darshana Jessore Amnura Chanpainawabganj Santahar Jaypurhat Parbatipur Bogra Bonapara Gaibanda - station
         Dinajpur Thakurgaon Panchagar Rangpur Kaunia Tista Kurigram Lalmonir-Hat Tush-Bhandar Patgram Burimari - station
         ;Forward Line
         fl1 fl2 fl3 fl4 fl5 fl6 fl7 fl8 fl9 fl10 - forward-line
