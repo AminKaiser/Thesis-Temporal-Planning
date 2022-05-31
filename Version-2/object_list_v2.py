@@ -17,7 +17,7 @@ train_list = [
     ["upobon-express",["Sylhet","Kulaura","Shaestaganj","Akhaura","Brahmanbaria","Bhairab","Dhaka-Biman-Bandar","Dhaka"]],
     ["titumir-express",["Rajshahi","Abdulpur","Santahar","Jaypurhat"]],
     ["rupsha-express",["Khulna","Jessore","Chuadanga","Bheramara","Abdulpur","Santahar","Parbatipur"]],
-    ["kurigram-express",["Santhar","Bogra", "Bonapara", "Gaibanda","Kaunia","Lalmonir-Hat","Burimari"]],
+    ["kurigram-express",["Santahar","Bogra", "Bonapara", "Gaibanda","Kaunia","Lalmonir-Hat","Burimari"]],
     ["kapataksha-express",["Khulna","Jessore", "Darshana", "Chuadanga","Bheramara","Ishwardi","Abdulpur","Rajshahi"]],
     ["udayan-express",["Chittagong","Feni", "Laksham", "Cumilla","Akhaura","Shaestaganj","Kulaura","Sylhet"]],
     ["upokul-express",["Dhaka","Dhaka-Biman-Bandar","Narsingdi","Bhairab", "Brahmanbaria", "Akhaura","Cumilla","Maijdi-Court","Noakhali"]],
