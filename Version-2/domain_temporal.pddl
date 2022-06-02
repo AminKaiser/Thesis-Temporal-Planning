@@ -1,5 +1,7 @@
 (define (domain temporal-train-schedule)
-    (:requirements :strips :typing :fluents :durative-actions :negative-preconditions :action-costs :duration-inequalities)
+    (:requirements :strips :typing :fluents :durative-actions 
+        :negative-preconditions :action-costs 
+        :duration-inequalities)
 
 
     (:types
@@ -25,7 +27,8 @@
     
     (:durative-action drive-train
         :parameters (?t - train ?from ?to - station ?l - line)
-        :duration (= ?duration (/(station-distance ?from ?to ) (train-speed ?t)))
+        :duration (= ?duration (/(station-distance ?from ?to )
+                     (train-speed ?t)))
         :condition (and (at start (train-at ?t ?from))
                         (at start (valid-move ?from ?to ?l))
                         (over all (free-line ?l))
@@ -68,7 +71,8 @@
     ; )
 
     (:durative-action maintenance-for
-        :parameters (?l - line ?t - train ?from - station ?to - station)
+        :parameters (?l - line ?t - train ?from - station 
+            ?to - station)
         :duration (= ?duration 3)
         :condition (and 
             (at start (train-at ?t ?from))
