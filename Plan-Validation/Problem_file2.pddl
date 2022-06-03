@@ -87,9 +87,9 @@
 
 
 (train-at Druto-Jan Dhaka-Biman-Bandar)
-(train-at Shapla Tongi)
+(train-at Shapla Dhaka-Biman-Bandar)
 (visited Druto-Jan Dhaka-Biman-Bandar)
-(visited Shapla Tongi)
+(visited Shapla Dhaka-Biman-Bandar)
 (stoppage-at Druto-Jan Joydebpur)
 (stoppage-at Shapla Dhaka)
 

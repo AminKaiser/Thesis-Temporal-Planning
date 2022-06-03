@@ -89,12 +89,12 @@
 (train-at Shapla Joydebpur)
 (visited Shapla Joydebpur)
 (stoppage-at Druto-Jan Dhaka-Biman-Bandar)
-(stoppage-at Shapla Tongi)
+(stoppage-at Shapla Dhaka-Biman-Bandar)
 
 )
 (:goal
 (and(visited Druto-Jan Dhaka-Biman-Bandar)
-(visited Shapla Tongi)
+(visited Shapla Dhaka-Biman-Bandar)
 
 ))
 (:metric minimize (total-cost))
