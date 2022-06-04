@@ -2,20 +2,33 @@
     (:domain temporal-train-schedule)
     (:objects 
         ;Train Name
-        suborno-express truna-express bonolota-express ekota-express drutojan-express chitra-express sundorban-express paharika-express upobon-express titumir-express rupsha-express kurigram-express kapataksha-express udayan-express upokul-express rupsa-express - train
+        suborno-express truna-express bonolota-express - train
+        ekota-express drutojan-express chitra-express - train
+        sundorban-express paharika-express upobon-express - train
+        titumir-express rupsha-express kurigram-express - train
+        kapataksha-express udayan-express upokul-express - train
         ;Station Name
-        Dhaka Dhaka-Biman-Bandar Tongi Narsingdi Bhairab Brahmanbaria Akhaura Cumilla Laksham Feni Chittagong - station
-        Maijdi-Court Noakhali Shaestaganj Kulaura Sylhet Joydebpur Mymensingh Tangail Bangabandhu-Setu Ishwardi Khulna Abdulpur  Rajshahi - station
-        Bheramara Chuadanga Darshana Jessore Amnura Chanpainawabganj Santahar Jaypurhat Parbatipur Bogra Bonapara Gaibanda - station
-        Dinajpur Thakurgaon Panchagar Rangpur Kaunia Tista Kurigram Lalmonir-Hat Tush-Bhandar Patgram Burimari - station
+        Dhaka Dhaka-Biman-Bandar Tongi Narsingdi Bhairab - station
+        Brahmanbaria Akhaura Cumilla Laksham Feni Chittagong - station
+        Maijdi-Court Noakhali Shaestaganj Kulaura Sylhet - station
+        Joydebpur Mymensingh Tangail Bangabandhu-Setu - station
+        Ishwardi Khulna Abdulpur  Rajshahi - station
+        Bheramara Chuadanga Darshana Jessore Amnura - station
+        Chanpainawabganj Santahar Jaypurhat Parbatipur - station
+        Bogra Bonapara Gaibanda Dinajpur Thakurgaon - station
+        Panchagar Rangpur Kaunia Tista Kurigram - station
+        Lalmonir-Hat Tush-Bhandar Patgram Burimari - station
         Nilphamari Chilahati Saiydpur - station
         ;Forward Line
         fl1 fl2 fl3 fl4 fl5 fl6 fl7 fl8 fl9 fl10 - forward-line
         ;Reverse Line
         rl1 rl2 rl3 rl4 rl5 rl6 rl7 rl8 rl9 rl10 - reverse-line
         ;Single Line
-        sl1 sl2 sl3 sl4 sl5 sl6 sl7 sl8 sl9 sl10 sl11 sl12 sl13 sl14 sl15 sl16 sl17 sl18 sl19 sl20 sl21 sl22 sl23 sl24 sl25 sl26 sl27 - single-line
-        sl28 sl29 sl30 sl31 sl32 sl33 sl34 sl35 sl36 sl37 sl38 sl39 sl40 - single-line
+        sl1 sl2 sl3 sl4 sl5 sl6 sl7 sl8 sl9 sl10 - single-line
+        sl11 sl12 sl13 sl14 sl15 sl16 sl17 sl18 - single-line 
+        sl19 sl20 sl21 sl22 sl23 sl24 sl25 sl26  - single-line
+        sl27 sl28 sl29 sl30 sl31 sl32 sl33 sl34 - single-line
+        sl35 sl36 sl37 sl38 sl39 sl40 - single-line
 
     )
     

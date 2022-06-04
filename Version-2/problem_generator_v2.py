@@ -33,7 +33,7 @@ for i in trainNo:
 problem.write(")\n")
 goal+="))\n"
 problem.write(goal)
-problem.write("(:metric minimize (total-cost))\n)\n")
+problem.write("(:metric minimize (total-time))\n)\n")
 
 static_problem_part.close()
 problem.close()
