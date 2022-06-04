@@ -22,7 +22,7 @@ trainNo=sample(range(0,len(train_list)),train_number)
 for i in trainNo:
     train=train_list[i]
     name=train[0]
-    speed=randrange(10,20,5)
+    speed=randrange(40,50,5)
     problem.write(f"\n(=(train-speed {name}){speed})\n")
     problem.write(f"(train-at {name} {train[1][0]})\n")
     problem.write(f"(visited {name} {train[1][0]})\n")
@@ -33,7 +33,7 @@ for i in trainNo:
 problem.write(")\n")
 goal+="))\n"
 problem.write(goal)
-problem.write("(:metric minimize (total-time))\n)\n")
+problem.write("(:metric minimize (total-cost))\n)\n")
 
 static_problem_part.close()
 problem.close()

@@ -7,12 +7,12 @@ line_list = ['fl1', 'fl2', 'fl3', 'fl4', 'fl5', 'fl6', 'fl7', 'fl8','fl9','fl10'
             'sl15','sl16','sl17','sl18','sl19','sl20','sl21','sl22','sl23','sl24','sl25','sl26','sl27','sl28','sl29','sl30','sl31','sl32','sl33','sl34','sl35','sl36','sl37','sl38','sl39','sl40']
 train_list = [
     ["suborno-express",["Dhaka","Dhaka-Biman-Bandar","Chittagong"]],
-    ["truna-express",["Chittagong","Akhaura","Brahmanbaria","Bhairab","Dhaka-Biman-Bandar","Dhaka"]],
+    ["truna-express",["Chittagong","Akhaura","Dhaka-Biman-Bandar","Dhaka"]],
     ["bonolota-express",["Dhaka","Dhaka-Biman-Bandar","Rajshahi"]],
-    ["ekota-express",["Panchagar","Tangail", "Bangabandhu-Setu", "Ishwardi","Joydebpur","Dhaka-Biman-Bandar","Dhaka"]],
-    ["drutojan-express",["Dhaka","Tangail", "Bangabandhu-Setu", "Ishwardi","Joydebpur","Panchagar","Dhaka-Biman-Bandar","Dhaka"]],
-    ["chitra-express",["Khulna","Tangail", "Bangabandhu-Setu", "Ishwardi","Joydebpur","Dhaka-Biman-Bandar","Dhaka"]],
-    ["sundorban-express",["Dhaka","Tangail", "Bangabandhu-Setu", "Ishwardi","Joydebpur","Khulna","Dhaka-Biman-Bandar","Dhaka"]],
+    ["ekota-express",["Panchagar","Ishwardi","Bangabandhu-Setu", "Dhaka-Biman-Bandar","Dhaka"]],
+    ["drutojan-express",["Dhaka","Tangail", "Bangabandhu-Setu", "Ishwardi","Parbatipur"]],
+    ["chitra-express",["Khulna","Ishwardi","Bangabandhu-Setu","Tangail", "Joydebpur","Dhaka-Biman-Bandar","Dhaka"]],
+    ["sundorban-express",["Dhaka","Tangail", "Bangabandhu-Setu", "Ishwardi","Khulna"]],
     ["paharika-express",["Chittagong","Akhaura","Kulaura", "Sylhet"]],
     ["upobon-express",["Sylhet","Kulaura","Shaestaganj","Akhaura","Brahmanbaria","Bhairab","Dhaka-Biman-Bandar","Dhaka"]],
     ["titumir-express",["Rajshahi","Abdulpur","Santahar","Jaypurhat","Parbatipur","Saiydpur","Nilphamari","Chilahati"]],

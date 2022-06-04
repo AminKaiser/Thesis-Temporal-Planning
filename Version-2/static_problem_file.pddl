@@ -12,7 +12,7 @@
         Brahmanbaria Akhaura Cumilla Laksham Feni Chittagong - station
         Maijdi-Court Noakhali Shaestaganj Kulaura Sylhet - station
         Joydebpur Mymensingh Tangail Bangabandhu-Setu - station
-        Ishwardi Khulna Abdulpur  Rajshahi - station
+        Ishwardi Khulna Abdulpur Rajshahi - station
         Bheramara Chuadanga Darshana Jessore Amnura - station
         Chanpainawabganj Santahar Jaypurhat Parbatipur - station
         Bogra Bonapara Gaibanda Dinajpur Thakurgaon - station
@@ -75,9 +75,7 @@
         (valid-move Parbatipur Rangpur sl25)
         (valid-move Rangpur Kaunia sl26)
 
-        (valid-move  Parbatipur Saiydpur sl38)
-        (valid-move  Saiydpur Nilphamari sl39)
-        (valid-move  Nilphamari Chilahati sl40)
+       
         
         (valid-move Kaunia Tista sl27)
         (valid-move Tista Lalmonir-Hat sl28)
@@ -86,10 +84,14 @@
         (valid-move Patgram Burimari sl31)
         (valid-move Tista Kurigram sl32)
         (valid-move Akhaura Shaestaganj sl33)
-        (valid-move Chanpainawabganj Kulaura sl34)
+        (valid-move Shaestaganj Kulaura sl34)
         (valid-move Kulaura Sylhet sl35)
         (valid-move Cumilla Maijdi-Court sl36)
         (valid-move Maijdi-Court Noakhali sl37)
+
+        (valid-move  Parbatipur Saiydpur sl38)
+        (valid-move  Saiydpur Nilphamari sl39)
+        (valid-move  Nilphamari Chilahati sl40)
       
         ;Reverse Move
         (valid-move Chittagong Feni rl1)
@@ -121,9 +123,9 @@
         (valid-move Santahar Abdulpur sl15)
         (valid-move Bogra Santahar sl16)
         (valid-move Bonapara Bogra sl17)
-        (valid-move Kaunia Bonapara sl18)
-        (valid-move Jaypurhat Santahar sl19)
-        (valid-move Bheramara Chuadanga sl20)
+        (valid-move Gaibanda Bonapara sl18)
+        (valid-move Kaunia Gaibanda sl19)
+        (valid-move Jaypurhat Santahar sl20)
         (valid-move Parbatipur Jaypurhat sl21)
         (valid-move Dinajpur Parbatipur sl22)
         (valid-move Thakurgaon Dinajpur sl23)
@@ -131,9 +133,7 @@
         (valid-move Rangpur Parbatipur sl25)
         (valid-move Kaunia Rangpur sl26)
 
-        (valid-move  Saiydpur Parbatipur sl38)
-        (valid-move  Nilphamari Saiydpur sl39)
-        (valid-move  Chilahati Nilphamari sl40)
+        
         
         (valid-move Tista Kaunia sl27)
         (valid-move Lalmonir-Hat Tista sl28)
@@ -146,6 +146,10 @@
         (valid-move Sylhet Kulaura sl35)
         (valid-move Maijdi-Court Cumilla sl36)
         (valid-move Noakhali Maijdi-Court sl37)
+
+        (valid-move  Saiydpur Parbatipur sl38)
+        (valid-move  Nilphamari Saiydpur sl39)
+        (valid-move  Chilahati Nilphamari sl40)
         
         
 
