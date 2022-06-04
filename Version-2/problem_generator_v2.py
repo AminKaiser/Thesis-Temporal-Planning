@@ -22,7 +22,7 @@ trainNo=sample(range(0,len(train_list)),train_number)
 for i in trainNo:
     train=train_list[i]
     name=train[0]
-    speed=randrange(40,50,5)
+    speed=randrange(15,30,5)
     problem.write(f"\n(=(train-speed {name}){speed})\n")
     problem.write(f"(train-at {name} {train[1][0]})\n")
     problem.write(f"(visited {name} {train[1][0]})\n")
