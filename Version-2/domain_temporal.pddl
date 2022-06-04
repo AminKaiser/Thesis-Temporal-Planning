@@ -1,7 +1,6 @@
 (define (domain temporal-train-schedule)
     (:requirements :strips :typing :fluents :durative-actions 
-        :negative-preconditions :action-costs 
-        :duration-inequalities)
+        :negative-preconditions :action-costs :duration-inequalities)
 
 
     (:types
@@ -54,7 +53,7 @@
         :effect (and 
             (at start (not (stoppage-at ?t ?s)))
             (at end (visited ?t ?s))
-            (at end (increase (total-cost) (* ?duration 0)))
+            (at end (increase (total-cost) (* ?duration 1)))
         )
     )
 
@@ -72,7 +71,7 @@
         :effect (and 
             (at end (not(maintenance-line ?l) 
             ))
-            (at end (increase (total-cost) (* ?duration 0)))
+            (at end (increase (total-cost) (* ?duration 1)))
         )
     )
     

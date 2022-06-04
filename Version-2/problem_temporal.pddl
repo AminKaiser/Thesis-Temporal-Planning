@@ -2,19 +2,20 @@
     (:domain temporal-train-schedule)
     (:objects 
         ;Train Name
-        suborno-express truna-express bonolota-express ekota-express drutojan-express chitra-express sundorban-express paharika-express upobon-express titumir-express rupsha-express kurigram-express kapataksha-express udayan-express upokul-express - train
+        suborno-express truna-express bonolota-express ekota-express drutojan-express chitra-express sundorban-express paharika-express upobon-express titumir-express rupsha-express kurigram-express kapataksha-express udayan-express upokul-express rupsa-express - train
         ;Station Name
         Dhaka Dhaka-Biman-Bandar Tongi Narsingdi Bhairab Brahmanbaria Akhaura Cumilla Laksham Feni Chittagong - station
         Maijdi-Court Noakhali Shaestaganj Kulaura Sylhet Joydebpur Mymensingh Tangail Bangabandhu-Setu Ishwardi Khulna Abdulpur  Rajshahi - station
         Bheramara Chuadanga Darshana Jessore Amnura Chanpainawabganj Santahar Jaypurhat Parbatipur Bogra Bonapara Gaibanda - station
         Dinajpur Thakurgaon Panchagar Rangpur Kaunia Tista Kurigram Lalmonir-Hat Tush-Bhandar Patgram Burimari - station
+        Nilphamari Chilahati Saiydpur - station
         ;Forward Line
         fl1 fl2 fl3 fl4 fl5 fl6 fl7 fl8 fl9 fl10 - forward-line
         ;Reverse Line
         rl1 rl2 rl3 rl4 rl5 rl6 rl7 rl8 rl9 rl10 - reverse-line
         ;Single Line
         sl1 sl2 sl3 sl4 sl5 sl6 sl7 sl8 sl9 sl10 sl11 sl12 sl13 sl14 sl15 sl16 sl17 sl18 sl19 sl20 sl21 sl22 sl23 sl24 sl25 sl26 sl27 - single-line
-        sl28 sl29 sl30 sl31 sl32 sl33 sl34 sl35 sl36 sl37 - single-line
+        sl28 sl29 sl30 sl31 sl32 sl33 sl34 sl35 sl36 sl37 sl38 sl39 sl40 - single-line
 
     )
     
@@ -60,6 +61,10 @@
         (valid-move Thakurgaon Panchagar sl24)
         (valid-move Parbatipur Rangpur sl25)
         (valid-move Rangpur Kaunia sl26)
+
+        (valid-move  Parbatipur Saiydpur sl38)
+        (valid-move  Saiydpur Nilphamari sl39)
+        (valid-move  Nilphamari Chilahati sl40)
         
         (valid-move Kaunia Tista sl27)
         (valid-move Tista Lalmonir-Hat sl28)
@@ -112,6 +117,10 @@
         (valid-move Panchagar Thakurgaon sl24)
         (valid-move Rangpur Parbatipur sl25)
         (valid-move Kaunia Rangpur sl26)
+
+        (valid-move  Saiydpur Parbatipur sl38)
+        (valid-move  Nilphamari Saiydpur sl39)
+        (valid-move  Chilahati Nilphamari sl40)
         
         (valid-move Tista Kaunia sl27)
         (valid-move Lalmonir-Hat Tista sl28)
@@ -193,6 +202,9 @@
         (free-line sl35)
         (free-line sl36)
         (free-line sl37)
+        (free-line sl38)
+        (free-line sl39)
+        (free-line sl40)
         
         ;station-distance in meters
         
@@ -245,6 +257,11 @@
         (= (station-distance Kulaura Sylhet)30)
         (= (station-distance Cumilla Maijdi-Court)42)
         (= (station-distance Maijdi-Court Noakhali)80)
+
+        (= (station-distance Parbatipur Saiydpur)45)
+        (= (station-distance Saiydpur Nilphamari)65)
+        (= (station-distance Nilphamari Chilahati)55)
+        
         
         ; Reverse station-distance
         (= (station-distance Dhaka Dhaka-Biman-Bandar)60)
@@ -296,11 +313,42 @@
         (= (station-distance Sylhet Kulaura)30)
         (= (station-distance Maijdi-Court Cumilla)42)
         (= (station-distance Noakhali Maijdi-Court)80)
+
+
+        (= (station-distance Saiydpur Parbatipur)45)
+        (= (station-distance Nilphamari Saiydpur)65)
+        (= (station-distance Chilahati Nilphamari)55)
+
+        
         
 
         
-(maintenance-line rl1)
-(maintenance-line rl4)
+(maintenance-line sl34)
+(maintenance-line sl8)
+(maintenance-line sl32)
+(maintenance-line sl36)
+
+(=(train-speed titumir-express)10)
+(train-at titumir-express Rajshahi)
+(visited titumir-express Rajshahi)
+(stoppage-at titumir-express Abdulpur)
+(stoppage-at titumir-express Santahar)
+(stoppage-at titumir-express Jaypurhat)
+(stoppage-at titumir-express Parbatipur)
+(stoppage-at titumir-express Saiydpur)
+(stoppage-at titumir-express Nilphamari)
+(stoppage-at titumir-express Chilahati)
+
+(=(train-speed udayan-express)10)
+(train-at udayan-express Chittagong)
+(visited udayan-express Chittagong)
+(stoppage-at udayan-express Feni)
+(stoppage-at udayan-express Laksham)
+(stoppage-at udayan-express Cumilla)
+(stoppage-at udayan-express Akhaura)
+(stoppage-at udayan-express Shaestaganj)
+(stoppage-at udayan-express Kulaura)
+(stoppage-at udayan-express Sylhet)
 
 (=(train-speed kapataksha-express)10)
 (train-at kapataksha-express Khulna)
@@ -312,53 +360,29 @@
 (stoppage-at kapataksha-express Ishwardi)
 (stoppage-at kapataksha-express Abdulpur)
 (stoppage-at kapataksha-express Rajshahi)
-
-(=(train-speed bonolota-express)15)
-(train-at bonolota-express Dhaka)
-(visited bonolota-express Dhaka)
-(stoppage-at bonolota-express Dhaka-Biman-Bandar)
-(stoppage-at bonolota-express Rajshahi)
-
-(=(train-speed upokul-express)15)
-(train-at upokul-express Dhaka)
-(visited upokul-express Dhaka)
-(stoppage-at upokul-express Dhaka-Biman-Bandar)
-(stoppage-at upokul-express Narsingdi)
-(stoppage-at upokul-express Bhairab)
-(stoppage-at upokul-express Brahmanbaria)
-(stoppage-at upokul-express Akhaura)
-(stoppage-at upokul-express Cumilla)
-(stoppage-at upokul-express Maijdi-Court)
-(stoppage-at upokul-express Noakhali)
-
-(=(train-speed titumir-express)15)
-(train-at titumir-express Rajshahi)
-(visited titumir-express Rajshahi)
-(stoppage-at titumir-express Abdulpur)
-(stoppage-at titumir-express Santahar)
-(stoppage-at titumir-express Jaypurhat)
 )
 (:goal
-(and(visited kapataksha-express Jessore)
+(and(visited titumir-express Abdulpur)
+(visited titumir-express Santahar)
+(visited titumir-express Jaypurhat)
+(visited titumir-express Parbatipur)
+(visited titumir-express Saiydpur)
+(visited titumir-express Nilphamari)
+(visited titumir-express Chilahati)
+(visited udayan-express Feni)
+(visited udayan-express Laksham)
+(visited udayan-express Cumilla)
+(visited udayan-express Akhaura)
+(visited udayan-express Shaestaganj)
+(visited udayan-express Kulaura)
+(visited udayan-express Sylhet)
+(visited kapataksha-express Jessore)
 (visited kapataksha-express Darshana)
 (visited kapataksha-express Chuadanga)
 (visited kapataksha-express Bheramara)
 (visited kapataksha-express Ishwardi)
 (visited kapataksha-express Abdulpur)
 (visited kapataksha-express Rajshahi)
-(visited bonolota-express Dhaka-Biman-Bandar)
-(visited bonolota-express Rajshahi)
-(visited upokul-express Dhaka-Biman-Bandar)
-(visited upokul-express Narsingdi)
-(visited upokul-express Bhairab)
-(visited upokul-express Brahmanbaria)
-(visited upokul-express Akhaura)
-(visited upokul-express Cumilla)
-(visited upokul-express Maijdi-Court)
-(visited upokul-express Noakhali)
-(visited titumir-express Abdulpur)
-(visited titumir-express Santahar)
-(visited titumir-express Jaypurhat)
 ))
 (:metric minimize (total-cost))
 )
