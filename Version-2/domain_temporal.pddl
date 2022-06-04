@@ -58,17 +58,6 @@
         )
     )
 
-    ; (:durative-action wait-at
-    ;     :parameters (?from - station ?t - train ?to - station ?l - line)
-    ;     :duration (= ?duration 0)
-    ;     :condition (and 
-    ;         (at start (train-at ?t ?from))
-    ;         (at start (not(free-line ?l)))
-    ;         (over all (valid-move ?from ?to ?l)) 
-    ;     )
-    ;     :effect (and (at end (increase (total-cost) (* ?duration 0)))
-    ;     )
-    ; )
 
     (:durative-action maintenance-for
         :parameters (?l - line ?t - train ?from - station 
