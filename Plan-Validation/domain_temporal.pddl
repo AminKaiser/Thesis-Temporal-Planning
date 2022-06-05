@@ -1,5 +1,6 @@
 (define (domain temporal-train-schedule)
-    (:requirements :strips :typing :fluents :durative-actions :negative-preconditions :action-costs :duration-inequalities)
+    (:requirements :strips :typing :fluents :durative-actions 
+        :negative-preconditions :duration-inequalities :action-costs)
 
 
     (:types
@@ -25,7 +26,8 @@
     
     (:durative-action drive-train
         :parameters (?t - train ?from ?to - station ?l - line)
-        :duration (= ?duration (/(station-distance ?from ?to ) (train-speed ?t)))
+        :duration (= ?duration (/(station-distance ?from ?to )
+                     (train-speed ?t)))
         :condition (and (at start (train-at ?t ?from))
                         (at start (valid-move ?from ?to ?l))
                         (over all (free-line ?l))
@@ -37,7 +39,6 @@
                     (at end (train-at ?t ?to))
                     (at end (free-line ?l))
                     (at end (increase (total-cost) (* ?duration 1)))
-        
         )
     )
 
@@ -51,24 +52,14 @@
         :effect (and 
             (at start (not (stoppage-at ?t ?s)))
             (at end (visited ?t ?s))
-            (at end (increase (total-cost) (* ?duration 0)))
+            (at end (increase (total-cost) (* ?duration 1)))
         )
     )
 
-    ; (:durative-action wait-at
-    ;     :parameters (?from - station ?t - train ?to - station ?l - line)
-    ;     :duration (= ?duration 0)
-    ;     :condition (and 
-    ;         (at start (train-at ?t ?from))
-    ;         (at start (not(free-line ?l)))
-    ;         (over all (valid-move ?from ?to ?l)) 
-    ;     )
-    ;     :effect (and (at end (increase (total-cost) (* ?duration 0)))
-    ;     )
-    ; )
 
     (:durative-action maintenance-for
-        :parameters (?l - line ?t - train ?from - station ?to - station)
+        :parameters (?l - line ?t - train ?from - station 
+            ?to - station)
         :duration (= ?duration 3)
         :condition (and 
             (at start (train-at ?t ?from))
@@ -79,7 +70,7 @@
         :effect (and 
             (at end (not(maintenance-line ?l) 
             ))
-            (at end (increase (total-cost) (* ?duration 0)))
+            (at end (increase (total-cost) (* ?duration 1)))
         )
     )
     
