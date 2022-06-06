@@ -79,11 +79,14 @@
         (visited shapla-express Bhairab)
         (stoppage-at drutojan-express Dhaka-Biman-Bandar)
         (stoppage-at shapla-express Tongi)
+        (stoppage-at shapla-express Dhaka-Biman-Bandar)
+
 
 )
 (:goal
 (and(visited drutojan-express Dhaka-Biman-Bandar)
 (visited shapla-express Tongi)
+(visited shapla-express Dhaka-Biman-Bandar)
 
 ))
 (:metric minimize (total-cost))
